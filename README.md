@@ -1,2 +1,2 @@
-# college-website
+# highscool-is-cool
 beta testing
