@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p>page1</p>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Dating Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to e-Dating!</h1>
+            <div class="auth">
+                <button onclick="signUp()">Sign Up</button>
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- User Profile Section -->
+    <section id="profile">
+        <div class="container">
+            <h2>Your Profile</h2>
+            <p>Nickname: <span id="nickname">JohnDoe</span></p>
+            <p>Age: <span id="age">20</span></p>
+            <p>Bio: <span id="bio">Love coding and sports!</span></p>
+            <img src="profile_pic.jpg" alt="Profile Picture" class="profile-pic">
+            <button onclick="editProfile()">Edit Profile</button>
+        </div>
+    </section>
+
+    <!-- Matchmaking Section -->
+    <section id="matchmaking">
+        <h2>Suggested Matches</h2>
+        <div class="match-suggestions">
+            <!-- Match suggestions will be inserted here dynamically -->
+        </div>
+    </section>
+
+    <!-- Real-Time Chat Section -->
+    <section id="chat">
+        <h2>Chat with Your Matches</h2>
+        <div class="chat-container">
+            <div class="messages" id="messages"></div>
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <!-- Live Streaming Section -->
+    <section id="live-stream">
+        <h2>Go Live</h2>
+        <button onclick="startLiveStream()">Start Live Stream</button>
+        <video id="live-video" width="320" height="240" autoplay></video>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
